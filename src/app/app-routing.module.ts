@@ -8,10 +8,12 @@ import { ProductComponent } from './product/product.component';
 
 
 const routes: Routes = [
-  { path: 'products', component: ProductComponent,canActivate:[LoginGuardService] },
-  { path: '', component:HomeComponent },
+  {path: 'products', component: ProductComponent,canActivate:[LoginGuardService] },
+  {path: '', component:HomeComponent },
   {path:'login',component:LoginComponent},
-  {path:'cart',component:CartComponent,canActivate:[LoginGuardService]}
+  {path:'cart',component:CartComponent,canActivate:[LoginGuardService]},
+  {path:'offers',loadChildren:()=>import('./offers/offers.module').then(m =>m.OffersModule) }
+
 
 ];
 
