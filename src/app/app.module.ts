@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SortPipe } from './sort.pipe';
+import { RepeatDirective } from './repeat.directive';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ProductComponent,
     CartComponent,
+    SortPipe,
+    RepeatDirective,
   ],
   imports: [
     BrowserModule,

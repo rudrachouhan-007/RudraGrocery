@@ -1,5 +1,11 @@
 
-    <img [src]='imgUrl' width=1500 height=800>
+<input type="text" [(ngModel)]="name"> <br/>
+
+<span *ngIf="name">
+<div *appRepeat="5"> Hello ,{{ name|sort }}</div>
+</span>
+
+<img [src]='imgUrl' width=1500 height=800>
     
     
     
